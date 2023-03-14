@@ -190,7 +190,7 @@ footer{
     src: url('IDroid.otf');
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 200px) { {
     header{
         width: 600px;
     }
