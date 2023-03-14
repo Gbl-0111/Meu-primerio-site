@@ -1,0 +1,227 @@
+  @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+header{
+    background: linear-gradient(186deg, rgba(31,97,0,1) 0%, rgba(20,126,11,1) 97%);
+    height: 190px;
+    box-shadow: -1px 1px 7px 0px black;
+    display: inline-table;
+    width: 100%;
+}
+.title{
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.title > p{
+    margin-top: 40px;
+}
+nav{
+    margin-top: 40px;
+    height: 32px;
+}
+nav > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Jost', sans-serif;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding: 10px;
+    font-family: 'IDroid';
+    src: url('IDroid.otf');
+    
+}
+nav :hover{
+    background-color: rgba(149, 149, 149, 0.702);
+    transition: 0.5s;
+}    
+main{
+    display: inline-block;
+    padding: 30px;
+    padding-top: 0px;
+    padding-left: 30px;
+    width: 87%;
+    box-shadow: 0px 5px 12px 0px black;
+    flex-direction: column-reverse;
+    margin-left: 70px;
+    background-color: white;
+}
+
+main > section{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+h1{
+    font-family: 'IDroid';
+    src: url('IDroid.otf');
+}
+mark{
+    background-color: #7bd673;
+}
+mark > a{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Jost' ;
+    font-weight: bold;
+}
+.pg1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.pg1 > h1{
+    color: rgb(14, 68, 0);
+    font-size: 30px;
+    
+}
+
+.pg2{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-size: 20px;
+}
+.pg2 > h1{
+    color: rgb(14, 68, 0);
+    background: linear-gradient(274deg, rgba(31, 97, 0, 0) 31%, rgba(109, 200, 101, 0.536) 52%);
+}
+
+.pt-2 {
+   margin-top: 5px;
+    line-height: 30px;
+    font-family: 'Jost';
+}
+.pt-2 > h1{
+    background: linear-gradient(274deg, rgba(31, 97, 0, 0) 31%, rgba(109, 200, 101, 0.536) 52%);
+    color: rgb(14, 68, 0);
+}
+
+.pt-2 > p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.pt-2 > aside{
+    font-size: 20px;
+
+}
+.droid{
+    width: 70%;
+    padding-left: 100px;
+    margin-left: 80px;
+}
+.video{
+    background-color: rgb(0, 48, 2);
+    padding-left: 30%;
+    display: flex;
+}
+
+.end{
+    margin: 10px;
+    background-color:rgba(84, 220, 50, 0.808) ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px;
+    width: 82vw;
+    margin-left: 1px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.end h3{
+    background-color:rgb(7, 94, 10) ;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+    border-radius: 7px;
+}
+.end p{
+    padding-left: 20px;
+    display: inline-block;
+    text-align: left;
+}
+.end a{
+    color: rgb(0, 54, 2);
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "✔";
+}
+.label{
+    display: flex;
+    flex-direction: row;
+   
+}
+.pll{
+    margin-left: 300px;
+}
+.pfinal{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(0, 48, 2);
+    text-align: center;
+    color: white;
+    font-family: 'IDroid';
+    src: url('IDroid.otf');
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        width: 600px;
+    }
+    
+    .title > p{
+        display: inline-block;
+        padding-left: 32px;
+    }
+    .video{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .pll{
+        margin-left: 40px;
+    }
+    nav{
+        margin-top: 40px;
+        height: 40px;
+        padding-left: 30px;
+        display: inline-flex;
+    }
+    main{
+        width: 440px;
+        margin-left: 30px;
+    }
+    .end{
+        width: 399px;
+    }
+
+    footer{
+        width: 500px;
+    }
+}
